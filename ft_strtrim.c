@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-carv <pde-carv@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:37:53 by pde-carv          #+#    #+#             */
-/*   Updated: 2020/05/14 22:03:51 by pde-carv         ###   ########.fr       */
+/*   Updated: 2020/05/15 04:11:06 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new_string;
 	size_t	ns_len;
-	
+
 	if (s1 == NULL || set == NULL)
-		return (NULL);	
+		return (NULL);
 	while (*s1 && (ft_strchr(set, *s1)))
 		s1++;
 	ns_len = ft_strlen(s1);
